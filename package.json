@@ -1,0 +1,21 @@
+{
+  "name": "learning",
+  "version": "1.0.0",
+  "description": "npm learning ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/binitkantjha/reactlearning.git)"
+  },
+  "keywords": [
+    "learn"
+  ],
+  "author": "Binit",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
