@@ -5,7 +5,8 @@
   "description": "npm learning ",
   "scripts": {
     "start": "parcel index_day1_0.html",
-    "test": "jest"
+    "test": "jest",
+    "build": "parcel index_day1_0.html"
   },
   "repository": {
     "type": "git",
