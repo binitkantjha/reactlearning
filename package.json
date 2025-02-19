@@ -1,6 +1,6 @@
 {
   "name": "learning",
-  "main": "index_.day1_0.html",
+  "main": "index.js",
   "version": "1.0.0",
   "description": "npm learning ",
   "scripts": {
