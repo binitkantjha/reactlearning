@@ -29,6 +29,8 @@
     background-color: #f0f0f0;
     padding :20px;
     margin: 10px;
+    overflow-wrap: break-word;
+
 }
 
 .res_cards:hover{
@@ -37,5 +39,27 @@
 }
 .res_cards_image{
     width:200px;
-    /* height: fit-content; */
+    height: 170px;
+}
+.simmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+   
+}
+.simmer-dummy{
+    width:200px;
+    height : 240px;
+    background-color: #f0f0f0;
+    margin: 10px;
+
+}
+.top-rated-restro{
+    display: flex;
+}
+.res-btn  {
+    margin:10px;
+}
+.serch-box-main{
+    margin:10px;
 }
