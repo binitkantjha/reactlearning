@@ -15,14 +15,14 @@ export const Body = () => {
   const fetchdata = async () => {
     const data =  await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=24.18300&lng=86.31370&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
     const res = await data.json();
-    console.log(res);
+    console.log(res); 
     setListOfResrtro(res?.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setfilterRestro(res?.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   };
 
-  // if (filteredRestro.length === 0) {
-  //   return <Simmer/>
-  //  }
+  if (filteredRestro.length === 0) {
+    return <Simmer/>
+   }
    return (
 
    
