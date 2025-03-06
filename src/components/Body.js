@@ -1,6 +1,7 @@
 import { Rescards } from "./Rescards";
 import { useState, useEffect } from "react";
 import { Simmer } from "./simmer";
+import { Link } from "react-router";
 export const Body = () => {
 
   const [listOfResrtro, setListOfResrtro] = useState([]);
@@ -15,7 +16,6 @@ export const Body = () => {
   const fetchdata = async () => {
     const data =  await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=24.18300&lng=86.31370&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
     const res = await data.json();
-    console.log(res); 
     setListOfResrtro(res?.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setfilterRestro(res?.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   };
@@ -51,7 +51,7 @@ export const Body = () => {
       </div>
       <div className="res_cards_container">
         {filteredRestro.map((restro) => {
-          return <Rescards key={restro.info.id} resData={restro} />
+          return  <Link to = {"/Restaurants/" +restro.info.id} key={restro.info.id}><Rescards  resData={restro} /></Link>
         })}
       </div>
 
